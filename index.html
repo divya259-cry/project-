@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Sunny's Have More</title>
+    <style>
+        /* Resetting margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec; /* Soft pink background */
+            color: #333;
+            height: 100vh; /* Full screen height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff4081; /* Pink color for the title */
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Middle section with the login form */
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px; /* Center the form in the page */
+            text-align: center;
+        }
+
+        h2 {
+            color: #ff4081; /* Pink color for the subheading */
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #ff4081; /* Pink button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #f50057; /* Darker pink on hover */
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        /* Small screen adjustment */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .login-container {
+                width: 90%; /* Make form container full width on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sunny's Have More</h1>
+        <p>Where every scoop is a delight!</p>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login-container">
+        <h2>Please Login to Continue</h2>
+        <form action="main.html">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sunny's Have More. All rights reserved.</p>
+    </footer>
+</body>
+</html>

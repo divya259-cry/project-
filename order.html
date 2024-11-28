@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Sunny's Have More</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec; /* Light pink background */
+            color: #333;
+        }
+
+        header {
+            background-color: #ff4081; /* Bright pink header */
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .order-form {
+            background-color: white;
+            width: 60%;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            text-align: left;
+            display: block;
+        }
+
+        select, input {
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+        }
+
+        .order-button {
+            background-color: #ff4081;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .order-button:hover {
+            background-color: #f50057; /* Darker pink */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff4081;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .order-form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Place Your Order - Sunny's Have More</h1>
+    </header>
+
+    <section>
+        <h2>Order Form</h2>
+        <div class="order-form">
+            <form>
+                <label for="ice-cream">Choose your ice cream:</label>
+                <select id="ice-cream" name="ice-cream">
+                    <option value="vanilla">Vanilla Dream</option>
+                    <option value="chocolate">Chocolate Fantasy</option>
+                    <option value="strawberry">Strawberry Delight</option>
+                </select><br>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1"><br>
+
+                <button type="submit" class="order-button">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sunny's Have More. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
